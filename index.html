@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>La Renon Healthcare — The Science of Life</title>
+<meta name="description" content="La Renon Healthcare — pioneering nephrology, critical care, neurology, urology and gastroenterology across 40+ countries. Science, engineered for life." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:ital,wght@0,200..800;1,200..700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Grain / noise overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Custom cursor -->
+<div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+
+<!-- Preloader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__glow"></div>
+  <div class="loader__center">
+    <img class="loader__logo" src="assets/larenon-logo.webp" alt="La Renon — Creating a Healthier World" />
+    <div class="loader__line"><span id="loaderBar"></span></div>
+    <div class="loader__count"><span id="loaderNum">00</span><i>%</i></div>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand" data-cursor="hover" aria-label="La Renon Healthcare — home">
+    <img src="assets/larenon-logo.webp" alt="La Renon — Creating a Healthier World" />
+  </a>
+  <button class="nav__toggle" id="menuToggle" aria-expanded="false" aria-controls="menu" data-cursor="hover">
+    <span class="nav__toggle-label"><span data-open>Menu</span><span data-close>Close</span></span>
+    <span class="nav__toggle-icon"><i></i><i></i></span>
+  </button>
+</header>
+
+<!-- Full-screen menu -->
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__inner">
+    <nav class="menu__nav" aria-label="Primary">
+      <ul class="menu__list">
+        <li style="--i:1"><a href="https://www.larenon.com/about-us/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">01</span><span class="menu__text">About Us</span></a></li>
+        <li style="--i:2"><a href="https://www.larenon.com/division/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">02</span><span class="menu__text">Divisions</span></a></li>
+        <li style="--i:3"><a href="https://www.larenon.com/globe/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">03</span><span class="menu__text">Global</span></a></li>
+        <li style="--i:4"><a href="https://www.larenon.com/r-d/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">04</span><span class="menu__text">R&nbsp;&amp;&nbsp;D</span></a></li>
+        <li style="--i:5"><a href="https://www.larenon.com/event-participation/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">05</span><span class="menu__text">Events</span></a></li>
+        <li style="--i:6"><a href="https://www.larenon.com/event/csr/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">06</span><span class="menu__text">CSR</span></a></li>
+        <li style="--i:7"><a href="https://www.larenon.com/life-at-la-renon/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">07</span><span class="menu__text">Life at La Renon</span></a></li>
+        <li style="--i:8"><a href="http://blog.larenon.com/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">08</span><span class="menu__text">Blog</span></a></li>
+        <li style="--i:9"><a href="https://www.larenon.com/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">09</span><span class="menu__text">Webinar</span></a></li>
+        <li style="--i:10"><a href="https://www.larenon.com/contact-us/" target="_blank" rel="noopener" data-cursor="hover"><span class="menu__num">10</span><span class="menu__text">Contact Us</span></a></li>
+      </ul>
+    </nav>
+    <aside class="menu__aside">
+      <div class="menu__block">
+        <h5>Get in touch</h5>
+        <a href="mailto:connect@larenon.com" data-cursor="hover">connect@larenon.com</a>
+      </div>
+      <div class="menu__block">
+        <h5>Head office</h5>
+        <p>La Renon Healthcare Pvt. Ltd.<br/>Ahmedabad, Gujarat, India</p>
+      </div>
+      <div class="menu__block">
+        <h5>Follow</h5>
+        <div class="menu__socials">
+          <a href="https://in.linkedin.com/company/larenon-healthcare" target="_blank" rel="noopener" data-cursor="hover">LinkedIn</a>
+          <a href="https://www.larenon.com/" target="_blank" rel="noopener" data-cursor="hover">Instagram</a>
+          <a href="https://www.larenon.com/" target="_blank" rel="noopener" data-cursor="hover">YouTube</a>
+        </div>
+      </div>
+      <p class="menu__tag">Creating A Healthier World — since 2007.</p>
+    </aside>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__video" aria-hidden="true">
+      <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg">
+        <source src="assets/hero-hd.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <h1 class="hero__title">
+          <span class="line"><span class="w">The</span> <span class="w">science</span></span>
+          <span class="line"><span class="w">of</span> <em class="w">life,</em></span>
+          <span class="line"><span class="w">engineered</span> <span class="w">with</span></span>
+          <span class="line accent"><span class="w">precision.</span></span>
+        </h1>
+
+        <p class="hero__lede reveal-up">
+          One of India's fastest-rising pharmaceutical companies — advancing nephrology,
+          critical care and neuroscience from molecule to medicine.
+        </p>
+
+        <div class="hero__actions reveal-up">
+          <a href="#divisions" class="hero__btn hero__btn--primary btn-magnetic" data-cursor="hover">
+            <span>Explore our divisions</span>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#connect" class="hero__btn hero__btn--ghost" data-cursor="hover"><span>Partner with us</span></a>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#science" class="hero__scroll" data-cursor="hover" aria-label="Scroll to discover">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 40" width="16" height="26"><rect x="1" y="1" width="22" height="38" rx="11" fill="none" stroke="currentColor" stroke-width="1.4"/><circle class="wheel" cx="12" cy="10" r="3" fill="currentColor"/></svg>
+    </a>
+  </section>
+
+  <!-- ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Nephroscience</span><i>✦</i><span>Critical Care</span><i>✦</i><span>CNS</span><i>✦</i><span>Gastroenterology</span><i>✦</i><span>Urology</span><i>✦</i><span>Cardio Metabolic</span><i>✦</i><span>Respiratory</span><i>✦</i><span>Gynaecology</span><i>✦</i>
+      <span>Nephroscience</span><i>✦</i><span>Critical Care</span><i>✦</i><span>CNS</span><i>✦</i><span>Gastroenterology</span><i>✦</i><span>Urology</span><i>✦</i><span>Cardio Metabolic</span><i>✦</i><span>Respiratory</span><i>✦</i><span>Gynaecology</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- MARQUEE STATEMENT -->
+  <section class="statement" id="science">
+    <div class="statement__label reveal-up">Our Purpose</div>
+    <h2 class="statement__text">
+      <span data-splt>We turn rigorous</span>
+      <span data-splt><em>research</em> into remedies</span>
+      <span data-splt>that reach the people</span>
+      <span data-splt>who need them <span class="mk">most.</span></span>
+    </h2>
+    <div class="statement__grid">
+      <p class="reveal-up">From our in-house R&amp;D centre we design, formulate and manufacture specialty medicines — obsessed with quality, driven by outcomes, accountable to every patient in the chain.</p>
+      <a href="#divisions" class="link-underline" data-cursor="hover">Explore our divisions →</a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat" data-reveal>
+      <div class="stat__num"><span class="count" data-to="17" data-suffix="+">0</span></div>
+      <div class="stat__lbl">Years of relentless<br/>innovation since 2007</div>
+    </div>
+    <div class="stat" data-reveal>
+      <div class="stat__num"><span class="count" data-to="40" data-suffix="+">0</span></div>
+      <div class="stat__lbl">Countries served across<br/>five continents</div>
+    </div>
+    <div class="stat" data-reveal>
+      <div class="stat__num"><span class="count" data-to="269">0</span></div>
+      <div class="stat__lbl">Global product<br/>registrations secured</div>
+    </div>
+    <div class="stat" data-reveal>
+      <div class="stat__num"><span class="count" data-to="50" data-suffix="+">0</span></div>
+      <div class="stat__lbl">Flagship brands trusted<br/>by clinicians</div>
+    </div>
+  </section>
+
+  <!-- ABOUT / SPLIT -->
+  <section class="about">
+    <div class="about__media" data-reveal>
+      <div class="about__visual duo">
+        <img src="assets/img-clinicians.jpg" alt="Clinicians reviewing diagnostic imaging at La Renon" />
+        <div class="about__badge"><span>ISO-grade</span> manufacturing &amp; QA</div>
+      </div>
+    </div>
+    <div class="about__body">
+      <div class="statement__label reveal-up">Who we are</div>
+      <h3 class="about__title">
+        <span data-splt>A young company</span>
+        <span data-splt>with the discipline</span>
+        <span data-splt>of a <em>giant.</em></span>
+      </h3>
+      <p class="reveal-up">Founded in 2007, La Renon climbed into India's top pharmaceutical tier within a single decade — an ascent powered by scientific integrity, deep therapeutic focus and an uncompromising standard of care.</p>
+      <ul class="about__list">
+        <li data-reveal><b>Specialty first.</b> Purpose-built portfolios in nephrology, critical care and neuroscience.</li>
+        <li data-reveal><b>Vertically integrated.</b> Discovery, formulation and manufacturing under one roof.</li>
+        <li data-reveal><b>Globally trusted.</b> Registrations and partnerships spanning 40+ markets.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DIVISIONS (horizontal scroll) -->
+  <section class="hscroll" id="divisions">
+    <div class="hscroll__pin">
+      <div class="hscroll__head">
+        <div class="statement__label reveal-up">Our Divisions</div>
+        <h2 class="sec-title"><span data-splt>Focused</span> <span data-splt><em>where it</em></span> <span data-splt>matters.</span></h2>
+        <div class="hscroll__meta">
+          <p class="divisions__intro reveal-up">Eight specialised divisions, one uncompromising standard of care — built around the conditions that matter most. <span class="hscroll__hint">Scroll to explore →</span></p>
+          <div class="hscroll__progress"><span id="hsProgress"></span></div>
+        </div>
+      </div>
+
+      <div class="hscroll__viewport">
+        <div class="hscroll__track" id="hsTrack">
+          <article class="dcard" data-cursor="hover">
+            <div class="dcard__img duo"><img src="assets/img-pipette.jpg" alt="Nephrology laboratory research" loading="lazy" /></div>
+            <div class="dcard__body">
+              <div class="dcard__top"><span class="dcard__num">01</span><svg class="dcard__arrow" viewBox="0 0 24 24" width="20" height="20"><path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3 class="dcard__title">Nephroscience</h3>
+              <p class="dcard__desc">La Renon's journey began in 2007 with the chronic therapeutic segment of Nephrology — the first company to foray into this domain, focused on early-stage Chronic Kidney Disease (CKD) patients.</p>
+              <a class="dcard__link" href="https://www.larenon.com/division/" target="_blank" rel="noopener" data-cursor="hover">Know more</a>
+            </div>
+          </article>
+
+          <article class="dcard" data-cursor="hover">
+            <div class="dcard__img duo"><img src="assets/img-clinicians.jpg" alt="Critical care clinicians" loading="lazy" /></div>
+            <div class="dcard__body">
+              <div class="dcard__top"><span class="dcard__num">02</span><svg class="dcard__arrow" viewBox="0 0 24 24" width="20" height="20"><path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3 class="dcard__title">Critical Care</h3>
+              <p class="dcard__desc">Chronic disease management has always been our focus. Critical care was another such venture — serving ICUs, CCUs and trauma centres across India with a gamut of high-quality anti-infectives.</p>
+              <a class="dcard__link" href="https://www.larenon.com/division/" target="_blank" rel="noopener" data-cursor="hover">Know more</a>
+            </div>
+          </article>
+
+          <article class="dcard" data-cursor="hover">
+            <div class="dcard__img duo"><img src="assets/img-brain.jpg" alt="Central nervous system" loading="lazy" /></div>
+            <div class="dcard__body">
+              <div class="dcard__top"><span class="dcard__num">03</span><svg class="dcard__arrow" viewBox="0 0 24 24" width="20" height="20"><path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3 class="dcard__title">CNS</h3>
+              <p class="dcard__desc">One of the fastest-growing CNS segments in the country — catering to diseases as severe as Epilepsy, Alzheimer's, Parkinson's, Stroke, MDD, BPD, Schizophrenia and Neuropathic Pain.</p>
+              <a class="dcard__link" href="https://www.larenon.com/division/" target="_blank" rel="noopener" data-cursor="hover">Know more</a>
+            </div>
+          </article>
+
+          <article class="dcard" data-cursor="hover">
+            <div class="dcard__img duo"><img src="assets/img-pills.jpg" alt="Gastroenterology medicines" loading="lazy" /></div>
+            <div class="dcard__body">
+              <div class="dcard__top"><span class="dcard__num">04</span><svg class="dcard__arrow" viewBox="0 0 24 24" width="20" height="20"><path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3 class="dcard__title">Gastroenterology</h3>
+              <p class="dcard__desc">Lifestyle conditions are on an alarming rise. Gastric and liver ailments have surged in recent years — La Renon addresses the most occurring and epidemic digestive disorders.</p>
+              <a class="dcard__link" href="https://www.larenon.com/division/" target="_blank" rel="noopener" data-cursor="hover">Know more</a>
+            </div>
+          </article>
+
+          <article class="dcard" data-cursor="hover">
+            <div class="dcard__img duo"><img src="assets/img-dna.jpg" alt="Urology therapeutics" loading="lazy" /></div>
+            <div class="dcard__body">
+              <div class="dcard__top"><span class="dcard__num">05</span><svg class="dcard__arrow" viewBox="0 0 24 24" width="20" height="20"><path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3 class="dcard__title">Urology</h3>
+              <p class="dcard__desc">Widening our vision in chronic disease management, we stepped into Urology — developing a complete basket of solutions and a well-established place in the market.</p>
+              <a class="dcard__link" href="https://www.larenon.com/division/" target="_blank" rel="noopener" data-cursor="hover">Know more</a>
+            </div>
+          </article>
+
+          <article class="dcard" data-cursor="hover">
+            <div class="dcard__img duo"><img src="assets/img-heart.jpg" alt="Cardio metabolic care" loading="lazy" /></div>
+            <div class="dcard__body">
+              <div class="dcard__top"><span class="dcard__num">06</span><svg class="dcard__arrow" viewBox="0 0 24 24" width="20" height="20"><path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3 class="dcard__title">Cardio Metabolic</h3>
+              <p class="dcard__desc">Cardio-metabolic conditions like Hypertension and Diabetes are among the most chronic ailments we face today. A dedicated product line and team address these diseases.</p>
+              <a class="dcard__link" href="https://www.larenon.com/division/" target="_blank" rel="noopener" data-cursor="hover">Know more</a>
+            </div>
+          </article>
+
+          <article class="dcard" data-cursor="hover">
+            <div class="dcard__img duo"><img src="assets/img-pipette.jpg" alt="Respiratory research" loading="lazy" /></div>
+            <div class="dcard__body">
+              <div class="dcard__top"><span class="dcard__num">07</span><svg class="dcard__arrow" viewBox="0 0 24 24" width="20" height="20"><path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3 class="dcard__title">Respiratory</h3>
+              <p class="dcard__desc">Much of the world's population, including India's, is severely affected by respiratory disease. La Renon addresses the medical gap with an absolute product basket built to manage such disorders.</p>
+              <a class="dcard__link" href="https://www.larenon.com/division/" target="_blank" rel="noopener" data-cursor="hover">Know more</a>
+            </div>
+          </article>
+
+          <article class="dcard" data-cursor="hover">
+            <div class="dcard__img duo"><img src="assets/img-clinicians.jpg" alt="Gynaecology care" loading="lazy" /></div>
+            <div class="dcard__body">
+              <div class="dcard__top"><span class="dcard__num">08</span><svg class="dcard__arrow" viewBox="0 0 24 24" width="20" height="20"><path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3 class="dcard__title">Gynaecology</h3>
+              <p class="dcard__desc">Gynaecology deals with some of the most sensitive areas of human life — from a woman's reproductive system to new motherhood, engaging not only with science but with varied emotions.</p>
+              <a class="dcard__link" href="https://www.larenon.com/division/" target="_blank" rel="noopener" data-cursor="hover">Know more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="research" id="research">
+    <div class="research__sticky">
+      <div class="statement__label reveal-up">Research &amp; Development</div>
+      <h2 class="research__title">
+        <span data-splt>Every medicine</span>
+        <span data-splt>begins as a</span>
+        <span data-splt><em>question.</em></span>
+      </h2>
+      <p class="reveal-up">Our in-house R&amp;D centre and advanced technical competency let us move from molecule to market with speed and control — reformulating, refining and validating at each step.</p>
+      <div class="research__fig duo" data-reveal><img src="assets/img-pipette.jpg" alt="Laboratory research at La Renon" loading="lazy" /></div>
+    </div>
+    <div class="research__steps">
+      <div class="rstep" data-reveal>
+        <span class="rstep__n">01</span>
+        <h5>Discovery &amp; Design</h5>
+        <p>Identifying unmet clinical needs and engineering candidate formulations around them.</p>
+      </div>
+      <div class="rstep" data-reveal>
+        <span class="rstep__n">02</span>
+        <h5>Formulation Science</h5>
+        <p>Optimising stability, bioavailability and delivery in our advanced development labs.</p>
+      </div>
+      <div class="rstep" data-reveal>
+        <span class="rstep__n">03</span>
+        <h5>Quality &amp; Compliance</h5>
+        <p>Rigorous QA and regulatory dossiers built for registration across 40+ countries.</p>
+      </div>
+      <div class="rstep" data-reveal>
+        <span class="rstep__n">04</span>
+        <h5>Scale &amp; Supply</h5>
+        <p>Reliable manufacturing that carries therapies from batch to bedside worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS & PARTICIPATION -->
+  <section class="events" id="events">
+    <div class="events__head">
+      <div class="statement__label reveal-up">Events &amp; Participation</div>
+      <h2 class="sec-title events__title"><span data-splt>People, purpose</span> <span data-splt><em>&amp; participation.</em></span></h2>
+    </div>
+
+    <div class="events__body">
+      <div class="events__tabs" role="tablist" aria-label="Events and participation">
+        <button class="etab is-active" data-etab="0" role="tab" aria-selected="true" data-cursor="hover">
+          <span class="etab__i">01</span><span class="etab__t">CSR</span><span class="etab__arrow">→</span>
+        </button>
+        <button class="etab" data-etab="1" role="tab" aria-selected="false" data-cursor="hover">
+          <span class="etab__i">02</span><span class="etab__t">Team La Renon</span><span class="etab__arrow">→</span>
+        </button>
+        <button class="etab" data-etab="2" role="tab" aria-selected="false" data-cursor="hover">
+          <span class="etab__i">03</span><span class="etab__t">Training &amp; Development</span><span class="etab__arrow">→</span>
+        </button>
+      </div>
+
+      <div class="events__stage">
+        <article class="epanel is-active" data-epanel="0" role="tabpanel">
+          <div class="epanel__img duo"><img src="assets/img-clinicians.jpg" alt="CSR — public health awareness" loading="lazy" /></div>
+          <div class="epanel__text">
+            <span class="epanel__eyebrow">Corporate Social Responsibility</span>
+            <h3 class="epanel__title">Public service, deeply embedded.</h3>
+            <p>Corporate social responsibility and public service are woven into the basic functioning of La Renon Healthcare. Over the years, sincere efforts have gone into raising public awareness of Chronic Kidney Disease, encouraging budding medical minds and offering medical support to the underprivileged.</p>
+            <a class="epanel__link btn-magnetic" href="https://www.larenon.com/event/csr/" target="_blank" rel="noopener" data-cursor="hover"><span>Know more</span><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+
+        <article class="epanel" data-epanel="1" role="tabpanel">
+          <div class="epanel__img duo"><img src="assets/event-team.jpg" alt="Team La Renon annual meet" loading="lazy" /></div>
+          <div class="epanel__text">
+            <span class="epanel__eyebrow">Our people</span>
+            <h3 class="epanel__title">A 500-strong team, pan-India.</h3>
+            <p>One of the strongest pillars of La Renon is its very own — Team La Renon. A workforce of around 500 professionals spread across every division across India. Our HR team ensures a polished selection and keeps boosting their confidence and knowledge throughout their journey with us.</p>
+            <a class="epanel__link btn-magnetic" href="https://www.larenon.com/life-at-la-renon/" target="_blank" rel="noopener" data-cursor="hover"><span>Know more</span><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+
+        <article class="epanel" data-epanel="2" role="tabpanel">
+          <div class="epanel__img duo"><img src="assets/event-training.jpg" alt="Training and development session" loading="lazy" /></div>
+          <div class="epanel__text">
+            <span class="epanel__eyebrow">Growing together</span>
+            <h3 class="epanel__title">Training &amp; development.</h3>
+            <p>La Renon believes that comprehensive growth of the company depends on developing each member — where individual knowledge and soft skills play a vital role. With an objective of delivering every product and service with competency, La Renon adheres to high training and development programmes.</p>
+            <a class="epanel__link btn-magnetic" href="https://www.larenon.com/life-at-la-renon/" target="_blank" rel="noopener" data-cursor="hover"><span>Know more</span><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS MARQUEE -->
+  <section class="brands">
+    <div class="brands__label reveal-up">Trusted brands, prescribed daily</div>
+    <div class="brands__row brands__row--a">
+      <div class="brands__track">
+        <span>RENOLOG</span><span>NUHENZ</span><span>SEVLAREN</span><span>ANFOE</span><span>NEURONOMIC</span><span>ESOGRESS</span><span>PBREN</span><span>FERRONOMIC</span>
+        <span>RENOLOG</span><span>NUHENZ</span><span>SEVLAREN</span><span>ANFOE</span><span>NEURONOMIC</span><span>ESOGRESS</span><span>PBREN</span><span>FERRONOMIC</span>
+      </div>
+    </div>
+    <div class="brands__row brands__row--b">
+      <div class="brands__track">
+        <span>LARINJECT</span><span>QUOGRESS</span><span>RIFAXIGRESS</span><span>CEREHENZ</span><span>TACROREN</span><span>MESAHENZ</span><span>RENOPRESS&nbsp;XL</span><span>LAREGAB</span>
+        <span>LARINJECT</span><span>QUOGRESS</span><span>RIFAXIGRESS</span><span>CEREHENZ</span><span>TACROREN</span><span>MESAHENZ</span><span>RENOPRESS&nbsp;XL</span><span>LAREGAB</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST NEWS -->
+  <section class="news" id="news">
+    <div class="news__head">
+      <div class="statement__label reveal-up">Latest News</div>
+      <h2 class="sec-title news__title"><span data-splt>Where you'll</span> <span data-splt><em>find us.</em></span></h2>
+    </div>
+
+    <div class="news__grid">
+      <article class="ncard" data-reveal data-cursor="hover">
+        <div class="ncard__img duo"><img src="assets/news-isn.jpg" alt="ISN 2025 exhibition" loading="lazy" /><span class="ncard__date">Dec 2025</span></div>
+        <div class="ncard__body">
+          <h3 class="ncard__title">ISN 2025</h3>
+          <p class="ncard__meta"><span>18–21 December 2025</span><span>Lucknow, Uttar Pradesh</span></p>
+          <a class="ncard__link" href="https://www.larenon.com/event-participation/" target="_blank" rel="noopener" data-cursor="hover"><span>Know more</span><svg viewBox="0 0 24 24" width="17" height="17"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <article class="ncard" data-reveal data-cursor="hover">
+        <div class="ncard__img duo"><img src="assets/news-esicon.jpg" alt="ESICON 2025 exhibition" loading="lazy" /><span class="ncard__date">Sep 2025</span></div>
+        <div class="ncard__body">
+          <h3 class="ncard__title">ESICON 2025</h3>
+          <p class="ncard__meta"><span>4–7 September 2025</span><span>Kolkata, West Bengal</span></p>
+          <a class="ncard__link" href="https://www.larenon.com/event-participation/" target="_blank" rel="noopener" data-cursor="hover"><span>Know more</span><svg viewBox="0 0 24 24" width="17" height="17"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <article class="ncard" data-reveal data-cursor="hover">
+        <div class="ncard__img duo"><img src="assets/news-isnsccon.jpg" alt="ISNSCCON 2025 exhibition" loading="lazy" /><span class="ncard__date">Aug 2025</span></div>
+        <div class="ncard__body">
+          <h3 class="ncard__title">ISNSCCON 2025</h3>
+          <p class="ncard__meta"><span>1–3 August 2025</span><span>Vijayawada, Andhra Pradesh</span></p>
+          <a class="ncard__link" href="https://www.larenon.com/event-participation/" target="_blank" rel="noopener" data-cursor="hover"><span>Know more</span><svg viewBox="0 0 24 24" width="17" height="17"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- GLOBAL -->
+  <section class="global" id="global">
+    <div class="global__inner">
+      <div class="statement__label reveal-up">Global Footprint</div>
+      <h2 class="global__title">
+        <span data-splt>Rooted in India.</span>
+        <span data-splt>Trusted across</span>
+        <span data-splt><em>the world.</em></span>
+      </h2>
+      <div class="global__stats">
+        <div data-reveal><b><span class="count" data-to="40" data-suffix="+">0</span></b><span>Countries</span></div>
+        <div data-reveal><b><span class="count" data-to="269">0</span></b><span>Registrations</span></div>
+        <div data-reveal><b><span class="count" data-to="90" data-suffix="+">0</span></b><span>Under evaluation</span></div>
+        <div data-reveal><b><span class="count" data-to="5">0</span></b><span>Continents</span></div>
+      </div>
+      <div class="globe" id="globe" data-reveal>
+        <div class="globe__ring globe__ring--1"></div>
+        <div class="globe__ring globe__ring--2"></div>
+        <div class="globe__ring globe__ring--3"></div>
+        <div class="globe__core"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="connect">
+    <div class="cta__inner">
+      <p class="cta__eyebrow reveal-up">Let's build the next chapter of care</p>
+      <h2 class="cta__title">
+        <span data-splt>Partner with</span>
+        <span data-splt>La&nbsp;Renon</span>
+      </h2>
+      <a href="mailto:connect@larenon.com" class="cta__btn btn-magnetic" data-cursor="hover">
+        <span>connect@larenon.com</span>
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/larenon-logo.webp" alt="La Renon — Creating a Healthier World" />
+        <p>Healthcare Pvt. Ltd. — advancing specialty medicine from Ahmedabad to the world.</p>
+      </div>
+      <div class="footer__cols">
+        <div><h6>Company</h6><a href="#science" data-cursor="hover">About</a><a href="#research" data-cursor="hover">Research</a><a href="#global" data-cursor="hover">Global</a></div>
+        <div><h6>Divisions</h6><a href="#divisions" data-cursor="hover">Nephroscience</a><a href="#divisions" data-cursor="hover">Critical Care</a><a href="#divisions" data-cursor="hover">CNS</a></div>
+        <div><h6>Connect</h6><a href="#connect" data-cursor="hover">Contact</a><a href="#connect" data-cursor="hover">Careers</a><a href="#connect" data-cursor="hover">Partners</a></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2007–2026 La Renon Healthcare Pvt. Ltd.</span>
+      <span class="footer__made">Reimagined concept · The Science of Life</span>
+      <a href="#top" class="footer__back" data-cursor="hover">Back to top ↑</a>
+    </div>
+  </footer>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
