@@ -503,7 +503,13 @@ body.menu-open .menu__aside{opacity:1;transform:none}
   /* divisions swipe cards a touch wider, clearer hint */
   .dcard{flex:0 0 82vw}
   /* news single column, not too narrow */
-  .news__grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+  /* news → horizontal swipe carousel on phones */
+  .news__grid{display:flex;grid-template-columns:none;max-width:none;margin:0;gap:1rem;
+    overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+    padding:.5rem 0 1.2rem;scroll-padding-left:0}
+  .news__grid::-webkit-scrollbar{display:none}
+  .news__grid{scrollbar-width:none}
+  .ncard{flex:0 0 80vw;scroll-snap-align:start}
   /* events tabs comfortable */
   .etab{padding:1rem .2rem}
   .epanel__title{font-size:clamp(1.5rem,7vw,2rem)}
